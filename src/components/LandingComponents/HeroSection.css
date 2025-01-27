@@ -1,0 +1,56 @@
+/* Hero Section Styles */
+.HeroSectionContainer {
+    display: flex; /* Use flexbox to align children horizontally */
+    justify-content: space-between; /* Space out the two sections */
+    padding: 2rem;
+    gap: 2rem; /* Space between .Hero and .Description */
+    background-color: #000;
+  color: white;
+  }
+  
+  .Hero {
+    font-size: 6vw;
+    margin-left: 1.5%;
+    flex: 2; /* Allow it to take equal space */
+    display: inline-block;
+    opacity: 0;
+    animation: fallIntoPlace 1.5s ease-out forwards;
+  }
+  
+  @keyframes fallIntoPlace {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px); /* Start above */
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(30px); /* Mid-fall position */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* End at normal position */
+    }
+  }
+  
+  .Description {
+    margin-top:15%;
+    font-size: 2vw;
+    flex: 1; /* Allow it to take equal space */
+  }
+  
+  .Join {
+    border-radius: 50px; /* Increase the value for more rounding */
+    background-color: aliceblue;
+    color: black;
+    padding: 10px 20px; /* Add padding for a better shape */
+    font-size: 16px; /* Adjust font size for readability */
+    border: none; /* Remove default border for a cleaner look */
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.Join:hover {
+    background-color: lightblue; /* Change background color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}

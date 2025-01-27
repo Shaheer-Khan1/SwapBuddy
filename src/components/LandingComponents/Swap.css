@@ -1,0 +1,51 @@
+.Swap{
+    margin-top: 5%;
+}
+.Swap h1{
+    text-align: center;
+}
+
+.Sub{
+    display: flex; /* Use flexbox to align children horizontally */
+    justify-content: space-between; /* Space out the two sections */
+    gap: 2vw;
+    margin-right:10%;
+}
+.Sub p{
+    width: 15vw;
+}
+
+.Sub h1{
+    width: 25vw;
+}
+
+.Content{
+    margin-top: 7%;
+}
+
+.sw {
+    border-radius: 50px; /* Increase the value for more rounding */
+    background-color: black;
+    color: white;
+    padding: 10px 20px; /* Add padding for a better shape */
+    font-size: 16px; /* Adjust font size for readability */
+    border: none; /* Remove default border for a cleaner look */
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.sw:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.Picture {
+    background-image: url('src/assets/Laptop.jpg'); /* Use the correct path */
+    background-size: cover; /* Ensure the image covers the container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    width: 80vh; /* Set a width for the container */
+    height: 50vh; /* Set a height for the container */
+    margin-left: 15%;
+    margin-top: 7%;
+}

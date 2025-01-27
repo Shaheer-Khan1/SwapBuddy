@@ -1,0 +1,32 @@
+.all{
+    color:white;
+    background-color: black;
+    text-align: center;
+}
+
+.Selection h1{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.Selection p{
+    text-align: center;
+}
+
+.Course {
+    border-radius: 50px; /* Increase the value for more rounding */
+    background-color: aliceblue;
+    color: black;
+    padding: 10px 20px; /* Add padding for a better shape */
+    font-size: 16px; /* Adjust font size for readability */
+    border: none; /* Remove default border for a cleaner look */
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    margin-bottom: 5%;
+}
+
+.Course:hover {
+    background-color: lightblue; /* Change background color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
